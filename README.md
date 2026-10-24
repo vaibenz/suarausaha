@@ -4,9 +4,9 @@
 
 It grew out of a consulting case on financing for rural Indonesian MSMEs, where a recurring barrier was the lack of simple records lenders can use. Many owners keep no books at all, often because writing and apps get in the way. Speaking is easier.
 
-* **Gemini function calling** turns speech or text into `record_sale`, `record_expense`, `get_daily_summary` and `undo_last_entry` calls. The backend validates and executes every call itself, and confirmations come from templates, so what the user hears always matches what was saved.
-* **An offline Bahasa Indonesia parser** handles number words ("seratus lima puluh ribu"), slang units (15rb, 1,5jt), measure words, credit sales, QRIS and multi item phrases when there is no network or API key.
-* **An accessible React interface** designed to WCAG 2.1 AA, for owners with low literacy, low vision or older phones. See [ACCESSIBILITY.md](ACCESSIBILITY.md).
+* Gemini function calling turns speech or text into `record_sale`, `record_expense`, `get_daily_summary` and `undo_last_entry` calls. The backend validates and executes every call itself, and confirmations come from templates, so what the user hears always matches what was saved.
+* An offline Bahasa Indonesia parser handles number words ("seratus lima puluh ribu"), slang units (15rb, 1,5jt), measure words, credit sales, QRIS and multi item phrases when there is no network or API key.
+* An accessible React interface designed to WCAG 2.1 AA, for owners with low literacy, low vision or older phones. See [ACCESSIBILITY.md](ACCESSIBILITY.md).
 
 ```mermaid
 flowchart LR
@@ -74,7 +74,7 @@ When the price is missing, it asks ("Harga untuk kopi belum disebut.") rather th
 
 Amounts are stored as whole rupiah integers, and days follow Asia/Jakarta time.
 
-## Layout
+## Where things live
 
 ```
 backend/suarausaha/
@@ -92,3 +92,7 @@ frontend/src/
 ## License
 
 MIT
+
+---
+
+If something here is unclear, broken, or just wrong, feel free to open an issue. I'm always happy to chat about it.
